@@ -16,6 +16,7 @@ The relevant code and instructions for accessing the data can be found in the `1
 3. Open `189 Early Project.ipynb` and run the cells in order. 
 
 ## Data Format
+Below is an example of the return value of a generated dataframe. The generate data function takes in a 
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
