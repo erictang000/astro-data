@@ -1,10 +1,8 @@
 #!/usr/bin/perl
 #
 # Sample Perl script for use with JPL's Horizons web-based batch interface.
-# Written 2006-Mar-02 by Alan B. Chamberlin (JPL/Caltech)
-#
-# Use of this script is at your own risk.
-#
+# Sourced from Alan B. Chamberlin (JPL/Caltech)
+
 use strict;
 use LWP::UserAgent;
 
