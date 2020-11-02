@@ -1,5 +1,5 @@
 # Astronomical Data for Machine Learning - Eric Tang and Calvin Grewal
-This is a dataset containing astronomical postion data for the 8 planets in the solar system obtained from JPL Horizons and Astropy ephemerus data, in conjuncton with astronomical event data from the NASA SkyEvents Calendar Database for the last 20 years. We obtained 20 years of positional data as well as astrological event data (Eclipses, Equinoxes, etc.) for each of the planets in the Solar System, relative to 1000 different locations on Earth for the purpose of being able to train a geocentric model that would be able to predict location of planets relative to time and locations on earth. We then cleaned and organized the positions/time/location data such that each is accessible easily via a pandas dataframe. The final dataset is too large to be stored on github and consists of 10 GB of raw text data stored on the google drive linked below.
+This is a dataset containing astronomical postion data for the 8 planets in the solar system obtained from JPL Horizons and Astropy ephemerus data, in conjunction with astronomical event data from the NASA SkyEvents Calendar Database for the last 20 years. We obtained 20 years of positional data as well as astrological event data (Eclipses, Equinoxes, etc.) for each of the planets in the Solar System, relative to 1000 different locations on Earth for the purpose of being able to train a geocentric model that would be able to predict location of planets relative to time and locations on earth. We then cleaned and organized the positions/time/location data such that each is accessible easily via a pandas dataframe. The final dataset is too large to be stored on github and consists of 10 GB of raw text data stored on the google drive linked below.
 
 ## Requirements
 The following must be installed to run the associated jupyter notebook:
@@ -16,7 +16,25 @@ The relevant code and instructions for accessing the data can be found in the `1
 3. Open `189 Early Project.ipynb` and run the cells in order. 
 
 ## Data Format
-Below is an example of the return value of a generated dataframe. The generate data function takes in a 
+Below is an example of the return value of a generated dataframe. The generate data function takes in the following arguments
+* `num_locations`
+** The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
+* `num_days`
+** The number of days of data to include in the dataframe. All data starts at 01-01-2000 00:00 and is offset by a gap of one day per data point.
+* `time_step`
+** The number of days at which to sample each data point in the dataframe. Must be an integer.
+* `planet`
+** A list containing the numbers corresponding to which planets should have their data included in the dataframe.
+| Index | Planet |
+|-------|--------|
+| 1     |    Mercury    |
+| 2     |    Venus    |
+| 3     |    Earth   | 
+| 4    |     Mars   | 
+| 5     |    Jupiter    |
+| 6     |    Saturn    | 
+| 7    |     Uranus   | 
+| 8     |    Neptune    |
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
