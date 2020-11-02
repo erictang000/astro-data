@@ -16,7 +16,7 @@ The relevant code and instructions for accessing the data can be found in the `1
 3. Open `189 Early Project.ipynb` and run the cells in order. 
 
 ## Data Format
-![](https://github.com/erictang000/astro-data/example_data/image.jpg?raw=true)
+![](https://github.com/erictang000/astro-data/example_data/dataframe.jpg?raw=true)
 
 
 
