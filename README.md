@@ -14,7 +14,7 @@ The relevant code and instructions for accessing the data can be found in the `1
 2. Download and unzip data locally from the linked [Google Drive](https://drive.google.com/drive/u/1/folders/16cBlFRV02PcA1_ypUR4UUju3h61P0zgg) (note this requires a UC Berkeley email to access). 
 2. Make sure that the unzipped data files named `planets.csv` as well as all of the `outputi_j.txt` files exist in the same directory as the `189 Early Project.ipynb`.
 3. Open `189 Early Project.ipynb` and run the cells in order. 
-4. Run the generate Data function
+4. Run the generate data function to generate dataframes for use
 The generate data function takes in the following arguments
   * `num_locations`
     - The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
@@ -23,21 +23,24 @@ The generate data function takes in the following arguments
   * `time_step`
     - The number of days at which to sample each data point in the dataframe. Must be an integer.
   * `planet`
-    - A list containing the numbers corresponding to which planets should have their data included in the dataframe.
+    - A list containing the numbers corresponding to which planets should have their data included in the dataframe. Valid indices are listed in the table below
   
-       | Index | Planet    |
-       |-------|--------   |
-       | 1     |    Mercury|
-       | 2     |    Venus  |
-       | 3     |    Earth  | 
-       | 4     |     Mars  | 
-       | 5     |    Jupiter|
-       | 6     |    Saturn | 
-       | 7     |     Uranus| 
-       | 8     |    Neptune|
+                                     | Index | Planet    |
+                                     |-------|--------   |
+                                     | 1     |    Mercury|
+                                     | 2     |    Venus  |
+                                     | 3     |    Earth  | 
+                                     | 4     |     Mars  | 
+                                     | 5     |    Jupiter|
+                                     | 6     |    Saturn | 
+                                     | 7     |     Uranus| 
+                                     | 8     |    Neptune|
+   * `location`
+     - A list containing the numbers corresponding to which planets should have their data included in the dataframe. Valid indices range from 1 to 999. Exact mappings from index to name are listed in locations.txt. All included indices must also fall in `range(1, num_locations)`, so those who intend to use this argument should set num_locations to 999.
+## Data Generation Examples
 
 ## Data Format
-Below is an example of the return value of a generated dataframe. 
+Below is an example of the return value of a generated dataframe. Each row of the dataframe correspondes to one set of observations from one location on earth at a given time. The lat/lon and the Geocentric XYZ vector coordinates of the location on earth are included, as well as the ra/dec, az/alt, and Geocentric XYZ vector coordinates of the planet at the given time as well. Event data is appended to the positional data at the end of the dataframe, with each event being one hot encoded based on the date for each row (1 implying the event occurred on that date and 0 implying the event did not occur on that date). The full list of columns of the dataframe can be found in df_columns.txt. 
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
