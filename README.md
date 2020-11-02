@@ -9,7 +9,10 @@ The following must be installed to run the associated jupyter notebook:
 A working perl environment along with Python 3 must be installed to run the `gen_input.py` and the `sample_horizons_batch_script.pl` files, which send HTTP requests to the JPL Horizons system database. An example input file and output file is included in the example_data folder of the repository
 The relevant code and instructions for accessing the data can be found in the `189 Early Project.ipynb` file, which should run on any working Jupyter version and Python 3 installation.
 
-## Instructions
-1. Download data locally from [Google Drive](https://drive.google.com/drive/u/1/folders/16cBlFRV02PcA1_ypUR4UUju3h61P0zgg)
-2. Make sure there is a file named `planets.csv` as well as all of the `output_i_j.txt` files in the same directory as the Jupyter Notebook file.
-3. Open `189 Early Project.ipynb` and run all of the cells to create the dataset. 
+## Accessing Data
+1. Clone this Git repository and install the required packages listed above.
+2. Download and unzip data locally from the linked [Google Drive](https://drive.google.com/drive/u/1/folders/16cBlFRV02PcA1_ypUR4UUju3h61P0zgg) (note this requires a UC Berkeley email to access). 
+2. Make sure that the unzipped data files named `planets.csv` as well as all of the `outputi_j.txt` files exist in the same directory as the `189 Early Project.ipynb`.
+3. Open `189 Early Project.ipynb` and run the cells in order. 
+
+
