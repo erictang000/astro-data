@@ -25,16 +25,16 @@ Below is an example of the return value of a generated dataframe. The generate d
 ** The number of days at which to sample each data point in the dataframe. Must be an integer.
 * `planet`
 ** A list containing the numbers corresponding to which planets should have their data included in the dataframe.
-| Index | Planet |
-|-------|--------|
-| 1     |    Mercury    |
-| 2     |    Venus    |
-| 3     |    Earth   | 
-| 4    |     Mars   | 
-| 5     |    Jupiter    |
-| 6     |    Saturn    | 
-| 7    |     Uranus   | 
-| 8     |    Neptune    |
+ | Index | Planet |
+ |-------|--------|
+ | 1     |    Mercury    |
+ | 2     |    Venus    |
+ | 3     |    Earth   | 
+ | 4    |     Mars   | 
+ | 5     |    Jupiter    |
+ | 6     |    Saturn    | 
+ | 7    |     Uranus   | 
+ | 8     |    Neptune    |
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
