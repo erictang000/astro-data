@@ -25,16 +25,17 @@ The generate data function takes in the following arguments
   * `planet`
     - A list containing the numbers corresponding to which planets should have their data included in the dataframe. Valid indices are listed in the table below
   
-                                     | Index | Planet    |
-                                     |-------|--------   |
-                                     | 1     |    Mercury|
-                                     | 2     |    Venus  |
-                                     | 3     |    Earth  | 
-                                     | 4     |     Mars  | 
-                                     | 5     |    Jupiter|
-                                     | 6     |    Saturn | 
-                                     | 7     |     Uranus| 
-                                     | 8     |    Neptune|
+      | Index | Planet    |
+      |-------|--------   |
+      | 1     |    Mercury|
+      | 2     |    Venus  |
+      | 3     |    Earth  | 
+      | 4     |     Mars  | 
+      | 5     |    Jupiter|
+      | 6     |    Saturn | 
+      | 7     |     Uranus| 
+      | 8     |    Neptune|
+      
    * `location`
      - A list containing the numbers corresponding to which planets should have their data included in the dataframe. Valid indices range from 1 to 999. Exact mappings from index to name are listed in locations.txt. All included indices must also fall in `range(1, num_locations)`, so those who intend to use this argument should set num_locations to 999.
 ## Data Generation Examples
