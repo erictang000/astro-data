@@ -14,28 +14,30 @@ The relevant code and instructions for accessing the data can be found in the `1
 2. Download and unzip data locally from the linked [Google Drive](https://drive.google.com/drive/u/1/folders/16cBlFRV02PcA1_ypUR4UUju3h61P0zgg) (note this requires a UC Berkeley email to access). 
 2. Make sure that the unzipped data files named `planets.csv` as well as all of the `outputi_j.txt` files exist in the same directory as the `189 Early Project.ipynb`.
 3. Open `189 Early Project.ipynb` and run the cells in order. 
+4. Run the generate Data function
+The generate data function takes in the following arguments
+  * `num_locations`
+    - The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
+  * `num_days`
+    - The number of days of data to include in the dataframe. All data starts at 01-01-2000 00:00 and is offset by a gap of one day per data point.
+  * `time_step`
+    - The number of days at which to sample each data point in the dataframe. Must be an integer.
+  * `planet`
+    - A list containing the numbers corresponding to which planets should have their data included in the dataframe.
+  
+       | Index | Planet    |
+       |-------|--------   |
+       | 1     |    Mercury|
+       | 2     |    Venus  |
+       | 3     |    Earth  | 
+       | 4     |     Mars  | 
+       | 5     |    Jupiter|
+       | 6     |    Saturn | 
+       | 7     |     Uranus| 
+       | 8     |    Neptune|
 
 ## Data Format
-Below is an example of the return value of a generated dataframe. The generate data function takes in the following arguments
-* `num_locations`
-  - The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
-* `num_days`
-  -The number of days of data to include in the dataframe. All data starts at 01-01-2000 00:00 and is offset by a gap of one day per data point.
-* `time_step`
-  - The number of days at which to sample each data point in the dataframe. Must be an integer.
-* `planet`
-  - A list containing the numbers corresponding to which planets should have their data included in the dataframe.
-  
- | Index | Planet    |
- |-------|--------   |
- | 1     |    Mercury|
- | 2     |    Venus  |
- | 3     |    Earth  | 
- | 4     |     Mars  | 
- | 5     |    Jupiter|
- | 6     |    Saturn | 
- | 7     |     Uranus| 
- | 8     |    Neptune|
+Below is an example of the return value of a generated dataframe. 
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
