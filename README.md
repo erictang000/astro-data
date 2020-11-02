@@ -14,6 +14,9 @@ The relevant code and instructions for accessing the data can be found in the `1
 2. Download and unzip data locally from the linked [Google Drive](https://drive.google.com/drive/u/1/folders/16cBlFRV02PcA1_ypUR4UUju3h61P0zgg) (note this requires a UC Berkeley email to access). 
 2. Make sure that the unzipped data files named `planets.csv` as well as all of the `outputi_j.txt` files exist in the same directory as the `189 Early Project.ipynb`.
 3. Open `189 Early Project.ipynb` and run the cells in order. 
-** 
+
+## Data Format
+![image](example_data/dataframe.jpg)
+
 
 
