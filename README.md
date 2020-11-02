@@ -16,7 +16,7 @@ The relevant code and instructions for accessing the data can be found in the `1
 3. Open `189 Early Project.ipynb` and run the cells in order. 
 
 ## Data Format
-![](/example_data/dataframe.jpg)
+![](example_data/dataframe.jpg)
 
 
 
