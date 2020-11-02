@@ -18,13 +18,14 @@ The relevant code and instructions for accessing the data can be found in the `1
 ## Data Format
 Below is an example of the return value of a generated dataframe. The generate data function takes in the following arguments
 * `num_locations`
- - The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
+  - The number of locations to include in the dataframe (unless further specified by the location parameter). Max value 999, Min value 2.
 * `num_days`
- -The number of days of data to include in the dataframe. All data starts at 01-01-2000 00:00 and is offset by a gap of one day per data point.
+  -The number of days of data to include in the dataframe. All data starts at 01-01-2000 00:00 and is offset by a gap of one day per data point.
 * `time_step`
- - The number of days at which to sample each data point in the dataframe. Must be an integer.
+  - The number of days at which to sample each data point in the dataframe. Must be an integer.
 * `planet`
- - A list containing the numbers corresponding to which planets should have their data included in the dataframe.
+  - A list containing the numbers corresponding to which planets should have their data included in the dataframe.
+  
  | Index | Planet    |
  |-------|--------   |
  | 1     |    Mercury|
