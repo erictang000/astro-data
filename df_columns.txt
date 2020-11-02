@@ -1,0 +1,13 @@
+['time', 'ra', 'dec', 'Planet', 'CenterName', 'CenterLon', 'CenterLat',
+       'az', 'alt', 'dist (center to planet AU)', 'Center_XYZ (Geocentric AU)',
+       'Planet_XYZ (Geocentric AU)', 'Datetime', 'Mercury Superior Conj.',
+       'Mercury Inferior Conj.', 'Venus Inferior Conj.',
+       'Venus Superior Conj.', 'Uranus Conjunction', 'Neptune Conjunction',
+       'Saturn Conjunction', 'Jupiter Conjunction', 'Mars Conjunction',
+       'Neptune Opposition', 'Saturn Opposition', 'Jupiter Opposition',
+       'Uranus Opposition', 'Mars Opposition', 'Partial Lunar Eclipse',
+       'Hybrid Solar Eclipse', 'Total Lunar Eclipse', 'Total Solar Eclipse',
+       'Pen. Lunar Eclipse', 'Partial Solar Eclipse', 'Annular Solar Eclipse',
+       'Vernal Equinox', 'Perihelion: 0.9832 AU', 'Autumnal Equinox',
+       'Perihelion: 0.9833 AU', 'Summer Solstice', 'Winter Solstice',
+       'Aphelion: 1.0168 AU', 'Aphelion: 1.0167 AU']
