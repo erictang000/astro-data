@@ -50,6 +50,7 @@ Below is an example of the return value of a generated dataframe.
 * Event data is appended to the positional data at the end of the dataframe, with each event being one hot encoded based on the date for each row (1 implying the event occurred on that date and 0 implying the event did not occur on that date). 
   - One thing to note is that certain events occur very infrequently (once per year), which is important to note when modeling with this data
 * The full list of columns of the dataframe can be found in df_columns.txt. 
+* `df.to_csv('out.csv')` can be used to export the df into an external csv.
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
