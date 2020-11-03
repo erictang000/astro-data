@@ -40,6 +40,7 @@ The generate data function takes in the following arguments
      - A list containing the numbers corresponding to which planets should have their data included in the dataframe. Valid indices range from 1 to 999. Exact mappings from index to name are listed in locations.txt. All included indices must also fall in `range(1, num_locations)`, so those who intend to use this argument should set num_locations to 999.
 ## Data Generation Example
 `df = generate_df(999, num_days=100, time_step=2, planet=[1, 8], location=[1, 2, 3])`
+
 This will return 100 days of positional data for Mercury and Neptune with a time step of 2 centered at locations with index 1, 2, and 3 (1: 'Crowborough', 2: 'Rayleigh', 3: 'Montpellier' from locations.txt)
 
 ## Data Format
