@@ -41,7 +41,12 @@ The generate data function takes in the following arguments
 ## Data Generation Examples
 
 ## Data Format
-Below is an example of the return value of a generated dataframe. Each row of the dataframe correspondes to one set of observations from one location on earth at a given time. The lat/lon and the Geocentric XYZ vector coordinates of the location on earth are included, as well as the ra/dec, az/alt, and Geocentric XYZ vector coordinates of the planet at the given time as well. Event data is appended to the positional data at the end of the dataframe, with each event being one hot encoded based on the date for each row (1 implying the event occurred on that date and 0 implying the event did not occur on that date). The full list of columns of the dataframe can be found in df_columns.txt. 
+Below is an example of the return value of a generated dataframe. 
+* Each row of the dataframe correspondes to one set of observations from one location on earth at a given time. 
+* The lat/lon and the Geocentric XYZ vector coordinates of the location on earth are included, as well as the ra/dec, az/alt, and Geocentric XYZ vector coordinates of the planet at the given time as well.
+* Event data is appended to the positional data at the end of the dataframe, with each event being one hot encoded based on the date for each row (1 implying the event occurred on that date and 0 implying the event did not occur on that date). 
+  - One thing to note is that certain events occur very infrequently (once per year), which is important to note when modeling with this data
+* The full list of columns of the dataframe can be found in df_columns.txt. 
 ![](https://github.com/erictang000/astro-data/blob/master/example_data/dataframe.png?raw=true)
 
 
